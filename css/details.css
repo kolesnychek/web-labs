@@ -1,0 +1,42 @@
+.details {
+    display: flex;
+    width: 80%;
+    margin: 5.3rem auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+}
+
+.details-img {
+    height: 32.5rem;
+    width: auto;
+}
+
+.details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    row-gap: 2rem;
+    margin: 0;
+}
+
+.details-content-elem {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.element-title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    color: #222F33;
+}
+
+.element-desc {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #646D70;
+}

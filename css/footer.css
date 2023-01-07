@@ -1,0 +1,41 @@
+footer {
+    background-color: #222F33;
+    height: 3.25rem;
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-email {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 0.875rem;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-img {
+    height: 2.1rem;
+    width: 11rem;
+}
+
+.footer-items {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.footer-elements {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 0.875rem;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
