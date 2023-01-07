@@ -1,0 +1,99 @@
+.hero {
+    background-image: url("../images/Bitmap\ first.png");
+    height: 45rem;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    background: none;
+    margin: 0 auto;    /*відцентрувати по горизонталі */
+    max-width: 80%;  /*розмір контейнера по горизонталі (макс ширина) */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    height: 2rem;
+    width: auto;
+}
+
+.header__right {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 2.25rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.default-button {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero__content {
+    display: grid;
+    grid-template-columns: 42fr 58fr;
+}
+
+.hero__inner {
+    padding-top: 150px;
+}
+
+.hero__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.hero__paragraph {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.hero__right {
+    padding-top: 190px;
+}
+
+.hero__right-content {
+    height: 10.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.img__button {
+    background: none;
+    background-image: url("../images/BTN\ Play.png");
+    width: 3rem;
+    height: 3rem;
+    background-size: contain;
+}
+
+.hero__right-paragraph {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: #FFFFFF;
+}
