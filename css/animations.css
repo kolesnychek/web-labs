@@ -1,0 +1,25 @@
+@keyframes floating {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+  
+@keyframes left-appereance {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+  
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}

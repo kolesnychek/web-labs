@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
 }
 
 .desc__container-left {
@@ -71,8 +72,8 @@
 
 .desc__container-bottom-title {
     font-weight: 900;
-    font-size: 50px;
-    line-height: 38px;
+    font-size: 3.125rem;
+    line-height: 2.375rem;
     color: #FFFFFF;
     align-self: flex-start;
     margin: 0;
@@ -81,10 +82,29 @@
 .desc__container-bottom-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
+    align-items: flex-st;
+    gap: 5rem;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5rem;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .desc__container {
+        flex-direction: column;
+        margin: 5rem auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .desc__container-bottom-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .desc__container-bottom-title {
+        align-self: center;
+    }
+
 }

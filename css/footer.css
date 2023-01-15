@@ -29,13 +29,27 @@ footer {
 
 .footer-items {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 0;
 }
 
-.footer-elements {
+.footer-element {
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 0.875rem;
     color: #FFFFFF;
     opacity: 0.6;
+}
+
+@media screen and (max-width: 545px) {
+    .footer-items {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer-email {
+        font-size: 0.9rem;
+    }
 }

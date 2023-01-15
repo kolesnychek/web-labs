@@ -1,18 +1,19 @@
 .hero {
     background-image: url("../images/Bitmap\ first.png");
-    height: 45rem;
+    height: 100vh;
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container {
+.hero-container {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
     background: none;
-    margin: 0 auto;    /*відцентрувати по горизонталі */
-    max-width: 80%;  /*розмір контейнера по горизонталі (макс ширина) */
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
 }
 
 header {
@@ -22,18 +23,28 @@ header {
     align-items: center;
 }
 
-.header__logo img {
+.header-menu {
+    display: none;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.header-menu img {
+    max-width: 100%;
+}
+
+.header-logo img {
     height: 2rem;
     width: auto;
 }
 
-.header__right {
+.header-right-container {
     display: flex;
     gap: 3rem;
     align-items: center;
 }
 
-.header__nav ul {
+.header-nav ul {
     display: flex;
     gap: 2.25rem;
     color: white;
@@ -41,49 +52,46 @@ header {
     font-size: 1.25rem;
 }
 
-.default-button {
+#button-header {
     font-size: 1rem;
     font-weight: 600;
 }
 
-.hero__content {
+.hero-lower-container {
     display: grid;
     grid-template-columns: 42fr 58fr;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
 }
 
-.hero__inner {
-    padding-top: 150px;
-}
-
-.hero__title {
+.hero-title {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 19px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     color: #FFFFFF;
     opacity: 0.8;
 }
 
-.hero__paragraph {
+.hero-paragraph {
     font-weight: 900;
-    font-size: 40px;
-    line-height: 38px;
-    color: #FFFFFF;
+    font-size: 2.5rem;
+    line-height: 2.375rem;
+    color: #FFFFFF;  
 }
 
-.hero__right {
-    padding-top: 190px;
-}
-
-.hero__right-content {
+.hero-lower-right-content {
     height: 10.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    animation: left-appereance 2s ease-out;
 }
 
-.img__button {
+.img-button {
     background: none;
     background-image: url("../images/BTN\ Play.png");
     width: 3rem;
@@ -91,9 +99,85 @@ header {
     background-size: contain;
 }
 
-.hero__right-paragraph {
+.hero-right-paragraph {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.25rem;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    #button-header {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .header-right-container {
+        gap: 0rem;
+    }
+
+    .header-nav {
+        background: #222F33;
+        position: fixed;
+        top: 4.5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: circle(0px at top right);
+        transition: clip-path 0.7s ease-in;
+        z-index: 1;
+        height: max-content;
+    }
+
+    .header-nav.open {
+        clip-path: circle(1000px at top);
+    }
+
+    .header-nav ul {
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .header-nav .header-nav-item {
+        margin-right: 0;
+        padding-top: 0.75vh;
+    }
+
+    .header-nav a {
+        font-weight: 500;
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .hero-lower-right-content {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .img-button {
+        background-repeat: no-repeat;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .hero-lower-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .hero-paragraph {
+        width: 30rem;
+    }
 }
