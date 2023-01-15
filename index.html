@@ -11,38 +11,39 @@
 
 <body> 
     <section class="hero">
-        <div class="container">
+        <div class="hero-container">
             <header>
-                <div class="header__logo">
+                <div class="header-logo">
                     <img src="./images/Logo horizontal.png" alt="Logo"/>
                 </div>
-                <div class="header__right">
-                    <nav class="header__nav">
+                <div class="header-right-container">
+                    <div class="header-menu" onclick="toggleMenu()">
+                        <img src="./images/burger-menu.png" alt="Menu icon">
+                    </div>
+                    <nav id="nav-links" class="header-nav">
                         <ul>
-                            <li class="header__nav-item"><a href="">Modellen</a></li>
-                            <li class="header__nav-item"><a href="">Kopen</a></li>
-                            <li class="header__nav-item"><a href="">Huren</a></li>
-                            <li class="header__nav-item"><a href="">Nieuws</a></li>
+                            <li class="header-nav-item"><a href="">Modellen</a></li>
+                            <li class="header-nav-item"><a href="">Kopen</a></li>
+                            <li class="header-nav-item"><a href="">Huren</a></li>
+                            <li class="header-nav-item"><a href="">Nieuws</a></li>
                         </ul>
                     </nav>
-                    <button class="default-button">Contact</button>
+                    <button id="button-header" class="default-button">Contact</button>
                 </div>
             </header>
-            <div class="hero__content">
-                <div class="hero__inner">
-                    <h1 class="hero__title">Sustainable tiny houses</h1>
-                    <p class="hero__paragraph">
+            <div class="hero-lower-container">
+                <div class="hero-lower-left-content">
+                    <h1 class="hero-title">Sustainable tiny houses</h1>
+                    <p class="hero-paragraph">
                         An ecological tiny house is constructed
                         from as much sustainable natural materials as possible 
                     </p>
                 </div>
-                <div class="hero__right">
-                    <div class="hero__right-content">
-                        <button class="img__button"></button>
-                        <p class="hero__right-paragraph">
-                            Watch the movie
-                        </p>
-                    </div>
+                <div class="hero-lower-right-content">
+                    <button class="img-button"></button>
+                    <p class="hero-right-paragraph">
+                        Watch the movie
+                    </p>
                 </div>
             </div>
         </div> 
@@ -149,11 +150,13 @@
             </p>
             <img class="footer-img" src="./images/Logo horizontal.png"/>
             <ul class="footer-items">
-                <li class="footer-elements"><a href="">Cookies</a></li>
-                <li class="footer-elements"><a href="">Privacybeleid</a></li>
+                <li class="footer-element"><a href="">Cookies</a></li>
+                <li class="footer-element"><a href="">Privacybeleid</a></li>
             </ul>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
