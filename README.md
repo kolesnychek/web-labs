@@ -31,3 +31,23 @@ Hint: for extra-large screen width, you can just fit website content inside a pr
 - The website must contain animations (at least 3). Can be made in any possible way, preferably with css properties (animation/transition).
 - Your project should be logically structured (all your CSS can’t be in just one-two files)
 - All of the previous work requirements must be kept.
+
+
+
+# Lab 3
+
+## 3. CRUD Javascript App: View Page
+
+Description: In this work, you have to make a simple presentation part of a website - View Page.
+For your blocks you must use data from your java/python project class.
+
+Then using JavaScript, you need to implement the following operations on your data (it is up to you to decide which field should be used for each of the operations):
+- Sort of your items option
+- Search option
+- Count total amount of some of the field (e.g total price of all cars)
+
+
+Requirements:
+
+- Responsiveness absolutely not required.
+- Styling is not important at all. Is up to you.
